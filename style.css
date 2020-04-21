@@ -15,6 +15,12 @@
 	background: pink;
 	width: 150px;
 }
+
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .content{
 	flex: 1;
 }
@@ -27,6 +33,8 @@
 	border: 1px red solid;
 	width: 200px;
 	height: 200px;
+	padding: 10px;
+	margin: 5px;
 }
 .girl .header{
 	display: flex;
@@ -39,16 +47,53 @@
 	display: flex;
 	align-items : center;
 	justify-content: center;
+	height: 150px;
 }
 
 .girl .image img{
 	max-width: 200px;
 	max-height: 150px;
+	border-radius: 20px;
 }
 
 .girl .button{
 	display: flex;
 	justify-content: space-around;
+}
+
+.left a{
+	margin-top:5px;
+	display: block;
+}
+
+.left .button{
+	background: red;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+.left .button:hover{
+	background: yellow;
+}
+
+/* Apply for 3 elements */
+.left ul{
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0;
+}
+
+/* Apply for 2 elements */
+.left ul ul{
+	margin-left: 20px;
+}
+/* Apply for 2 elements */
+.left li ul{
+	display: none;
+}
+
+.left li:hover > ul{
+	display: block;
 }
 
 .icon{
@@ -64,4 +109,74 @@
 .icon.like:hover{
 	background-image: url(img/like-hover.jpg);
 }
+
+table{
+	background: #FFAA33;
+	width: 100%;
+}
+
+td{
+	border: 1px red solid;
+}
+
+tr:nth-child(2n + 3) td{
+	background: #CCC;
+}
+
+tr:nth-child(2n + 4) td{
+	background: #0CC;
+}
+
+
+tr:last-child td{
+	border-top: 3px black solid;
+	font-weight: bold;
+}
+
+.popup{
+    position: fixed;
+	height: 100vh;
+	width: 100%;
+	left: 0;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup .cover{
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	opacity: 0.5;
+	
+	height: 100vh;
+	width: 100%;
+	
+	background: #000;
+}
+
+.popup .popup-content{
+	background: #fff;
+	z-index: 500;
+	width: 500px;
+	height: 500px;
+	display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
