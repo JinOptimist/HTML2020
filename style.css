@@ -133,6 +133,10 @@ tr:last-child td{
 	font-weight: bold;
 }
 
+.footer{
+	font-size: 50px;
+}
+
 .popup{
     position: fixed;
 	height: 100vh;
