@@ -177,12 +177,25 @@ tr:last-child td{
 }
 
 .girl.big-image{
-	width: 100%;
+	position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .girl.big-image .image{
+	background: gray;
 	width: 100%;
-	
+    height: calc(100vh - 20px);
+}
+
+.girl.big-image .image img{
+	max-width: 100%;
+    max-height: calc(100vh - 60px);
 }
 
 
