@@ -16,6 +16,12 @@
 	width: 150px;
 }
 
+.fixed-left{
+	position: fixed;
+    width: 150px;
+
+}
+
 .gallery{
 	display: flex;
 	flex-wrap: wrap;
@@ -170,8 +176,14 @@ tr:last-child td{
 	display: inline;
 }
 
+.girl.big-image{
+	width: 100%;
+}
 
-
+.girl.big-image .image{
+	width: 100%;
+	
+}
 
 
 
