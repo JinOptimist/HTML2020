@@ -14,8 +14,14 @@
 				<div class='fixed-left'>
 					<ul>
 						<li>
-							<a href="http://google.com"><div class='button'>Go to google</div></a>
+							<a href="#profile"><div class='button'>profile</div></a>
 						</li>
+						<li>
+							<a href="#gallery"><div class='button'>gallery</div></a>
+						</li>
+						<li>
+							<a href="#table"><div class='button'>table</div></a>
+						</li>						
 						<li>
 							<a href="#"><div class='button'>game learn</div></a>
 							
@@ -50,125 +56,79 @@
 				
 			</div>
 			<div class='content'>
-				<div class='gallery'>
-					<div class='girl'>
-						<div class='header'>
-							gray
+				<div class='page-content profile' id='profile'>
+					<div class='line'>
+						<div class='title'>
+							<label for='login'>
+								Name
+							</label>
 						</div>
-						<div class='image'>
-							<img src="https://i.pinimg.com/originals/bc/db/94/bcdb94aae9ce719ea6a575d824a21d6f.png" />
-						</div>
-						<div class='button'>
-							<span class='icon like'></span>
-							<span class='icon dislike'></span>
+						<div class='data'>
+							<input id="login" type='text' placeholder='Ты кто?' />
 						</div>
 					</div>
-					
-					<div class='girl'>
-						<div class='header'>
-							twince
+					<div class='line'>
+						<div class='title'>
+							Pass
 						</div>
-						<div class='image'>
-							<img src="img/girl3.jpg" />
-						</div>
-						<div class='button'>
-							<span class='icon like'></span>
-							<span class='icon dislike'></span>
+						<div class='data'>
+							<input type='password'  placeholder='не 123456' />
 						</div>
 					</div>
-					
-					<div class='girl'>
-						<div class='header'>
-							Orange
+					<div class='line'>
+						<div class='title'>
+							Sex
 						</div>
-						<div class='image'>
-							<img src="img/girl2.jpg" />
-						</div>
-						<div class='button'>
-							<span class='icon like'></span>
-							<span class='icon dislike'></span>
-						</div>
-					</div>
-					
-					<div class='girl'>
-						<div class='header'>
-							gray
-						</div>
-						<div class='image'>
-							<img src="https://i.pinimg.com/originals/bc/db/94/bcdb94aae9ce719ea6a575d824a21d6f.png" />
-						</div>
-						<div class='button'>
-							<span class='icon like'></span>
-							<span class='icon dislike'></span>
+						<div class='data'>
+							<label>
+								MУ
+								<input type='radio' name='sex' value='m' />
+							</label>
+							
+							<label>
+								ЖЕ<input type='radio' name='sex' value='f' />
+							</label>
 						</div>
 					</div>
-					
-					<div class='girl'>
-						<div class='header'>
-							twince
+					<div class='line'>
+						<div class='title'>
+							City
 						</div>
-						<div class='image'>
-							<img src="img/girl3.jpg" />
-						</div>
-						<div class='button'>
-							<span class='icon like'></span>
-							<span class='icon dislike'></span>
-						</div>
-					</div>
-					
-					<div class='girl'>
-						<div class='header'>
-							Orange
-						</div>
-						<div class='image'>
-							<img src="img/girl2.jpg" />
-						</div>
-						<div class='button'>
-							<span class='icon like'></span>
-							<span class='icon dislike'></span>
+						<div class='data'>
+							<select>
+								<option>Minsl</option>
+								<option>Narsultan</option>
+								<option selected="selected">Ne minsk</option>
+							</select>
 						</div>
 					</div>
-					
-					<div class='girl'>
-						<div class='header'>
-							gray
+					<div class='line'>
+						<div class='title'>
+							Bith
 						</div>
-						<div class='image'>
-							<img src="https://i.pinimg.com/originals/bc/db/94/bcdb94aae9ce719ea6a575d824a21d6f.png" />
-						</div>
-						<div class='button'>
-							<span class='icon like'></span>
-							<span class='icon dislike'></span>
+						<div class='data'>
+							<input type='date' />
 						</div>
 					</div>
-					
-					<div class='girl'>
-						<div class='header'>
-							twince
+					<div class='line'>
+						<div class='title'>
+							Size
 						</div>
-						<div class='image'>
-							<img src="img/girl3.jpg" />
-						</div>
-						<div class='button'>
-							<span class='icon like'></span>
-							<span class='icon dislike'></span>
+						<div class='data'>
+							<input type='range' value='3' min='0' max='5' id='sizeInput' oninput="sizeOutput.value = sizeInput.value" />
+							<output id="sizeOutput">3</output>							
 						</div>
 					</div>
-					
-					<div class='girl'>
-						<div class='header'>
-							Orange
+					<div class='line'>
+						<div class='title'>
+							Color
 						</div>
-						<div class='image'>
-							<img src="img/girl2.jpg" />
-						</div>
-						<div class='button'>
-							<span class='icon like'></span>
-							<span class='icon dislike'></span>
+						<div class='data'>
+							<input type='color' value='#5fec53' />
 						</div>
 					</div>
 				</div>
-				<div>
+				<div class='page-content' id='table'>
 					<table>
 						<tr>
 							<td rowspan="2">
@@ -352,6 +312,120 @@
 						</tr>
 					</table>
 				</div>
+				<div class='page-content' id='gallery'>
+					<div class='gallery'>
+						
+						<div class='girl'>
+							<div class='header'>
+								gray
+							</div>
+							<div class='image'>
+								<img src="https://i.pinimg.com/originals/bc/db/94/bcdb94aae9ce719ea6a575d824a21d6f.png" />
+							</div>
+							<div class='button'>
+								<span class='icon like'></span>
+								<span class='icon dislike'></span>
+							</div>
+						</div>
+						<div class='girl'>
+							<div class='header'>
+								twince
+							</div>
+							<div class='image'>
+								<img src="img/girl3.jpg" />
+							</div>
+							<div class='button'>
+								<span class='icon like'></span>
+								<span class='icon dislike'></span>
+							</div>
+						</div>
+						<div class='girl'>
+							<div class='header'>
+								Orange
+							</div>
+							<div class='image'>
+								<img src="img/girl5.jpg" />
+							</div>
+							<div class='button'>
+								<span class='icon like'></span>
+								<span class='icon dislike'></span>
+							</div>
+						</div>
+						<div class='girl'>
+							<div class='header'>
+								gray
+							</div>
+							<div class='image'>
+								<img src="https://i.pinimg.com/originals/bc/db/94/bcdb94aae9ce719ea6a575d824a21d6f.png" />
+							</div>
+							<div class='button'>
+								<span class='icon like'></span>
+								<span class='icon dislike'></span>
+							</div>
+						</div>
+						<div class='girl'>
+							<div class='header'>
+								twince
+							</div>
+							<div class='image'>
+								<img src="img/girl6.jpg" />
+							</div>
+							<div class='button'>
+								<span class='icon like'></span>
+								<span class='icon dislike'></span>
+							</div>
+						</div>
+						<div class='girl'>
+							<div class='header'>
+								Orange
+							</div>
+							<div class='image'>
+								<img src="img/girl7.jpg" />
+							</div>
+							<div class='button'>
+								<span class='icon like'></span>
+								<span class='icon dislike'></span>
+							</div>
+						</div>
+						<div class='girl'>
+							<div class='header'>
+								gray
+							</div>
+							<div class='image'>
+								<img src="https://i.pinimg.com/originals/bc/db/94/bcdb94aae9ce719ea6a575d824a21d6f.png" />
+							</div>
+							<div class='button'>
+								<span class='icon like'></span>
+								<span class='icon dislike'></span>
+							</div>
+						</div>
+						<div class='girl'>
+							<div class='header'>
+								twince
+							</div>
+							<div class='image'>
+								<img src="img/girl3.jpg" />
+							</div>
+							<div class='button'>
+								<span class='icon like'></span>
+								<span class='icon dislike'></span>
+							</div>
+						</div>
+						<div class='girl'>
+							<div class='header'>
+								Orange
+							</div>
+							<div class='image'>
+								<img src="img/girl2.jpg" />
+							</div>
+							<div class='button'>
+								<span class='icon like'></span>
+								<span class='icon dislike'></span>
+							</div>
+						</div>
+					
+					</div>
+				</div>
 			</div>
 			<div class='adv'>
 				adv
@@ -365,7 +439,7 @@
 			<div class='cover'></div>
 			<div class='popup-content'>
 				<div class='close'>
-					<img src='img/girl4.jpg' />
+					<img src='img/girl5.jpg' />
 				</div>
 			</div>
 		</div>
