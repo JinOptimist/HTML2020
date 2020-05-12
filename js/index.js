@@ -12,10 +12,4 @@ $(document).ready(function(){
 		isAutoplay: true,
 		delayAutoplay: 10 * 1000
 	});
-	
-	slideShow('.slider-indody', {
-		isAutoplay: true,
-		delayAutoplay: 10 * 1000
-	});
-	
 });
