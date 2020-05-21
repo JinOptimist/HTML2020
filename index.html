@@ -59,74 +59,94 @@
 			</div>
 			<div class='content'>
 				<div class='page-content profile' id='profile'>
-					<div class='line'>
-						<div class='title'>
-							<label for='login'>
-								Name
-							</label>
+					<div class='formAndPreview'>
+						<div class='form'>
+							<div class='line'>
+								<div class='title'>
+									<label for='login'>
+										Name
+									</label>
+								</div>
+								<div class='data'>
+									<input id="login" type='text' placeholder='Ты кто?' />
+								</div>
+							</div>
+							<div class='line'>
+								<div class='title'>
+									Pass
+								</div>
+								<div class='data'>
+									<input type='password'  placeholder='не 123456' />
+								</div>
+							</div>
+							<div class='line'>
+								<div class='title'>
+									Sex
+								</div>
+								<div class='data'>
+									<label>
+										MУ
+										<input type='radio' name='sex' value='m' />
+									</label>
+									
+									<label>
+										ЖЕ<input type='radio' name='sex' value='f' />
+									</label>
+								</div>
+							</div>
+							<div class='line'>
+								<div class='title'>
+									City
+								</div>
+								<div class='data'>
+									<select>
+										<option>Minsl</option>
+										<option>Narsultan</option>
+										<option selected="selected">Ne minsk</option>
+									</select>
+								</div>
+							</div>
+							<div class='line'>
+								<div class='title'>
+									Bith
+								</div>
+								<div class='data'>
+									<input type='date' />
+								</div>
+							</div>
+							<div class='line'>
+								<div class='title'>
+									Size
+								</div>
+								<div class='data'>
+									<input type='range' value='3' min='0' max='5' id='sizeInput' oninput="sizeOutput.value = sizeInput.value" />
+									<output id="sizeOutput">3</output>							
+								</div>
+							</div>
+							<div class='line'>
+								<div class='title'>
+									Color
+								</div>
+								<div class='data'>
+									<input type='color' value='#5fec53' />
+								</div>
+							</div>
+							<div class='line'>
+								<div class='title'></div>
+								<div class='data'>
+									<input type='button' value='save' class='showPreview' />
+								</div>
+							</div>
 						</div>
-						<div class='data'>
-							<input id="login" type='text' placeholder='Ты кто?' />
-						</div>
-					</div>
-					<div class='line'>
-						<div class='title'>
-							Pass
-						</div>
-						<div class='data'>
-							<input type='password'  placeholder='не 123456' />
-						</div>
-					</div>
-					<div class='line'>
-						<div class='title'>
-							Sex
-						</div>
-						<div class='data'>
-							<label>
-								MУ
-								<input type='radio' name='sex' value='m' />
-							</label>
-							
-							<label>
-								ЖЕ<input type='radio' name='sex' value='f' />
-							</label>
-						</div>
-					</div>
-					<div class='line'>
-						<div class='title'>
-							City
-						</div>
-						<div class='data'>
-							<select>
-								<option>Minsl</option>
-								<option>Narsultan</option>
-								<option selected="selected">Ne minsk</option>
-							</select>
-						</div>
-					</div>
-					<div class='line'>
-						<div class='title'>
-							Bith
-						</div>
-						<div class='data'>
-							<input type='date' />
-						</div>
-					</div>
-					<div class='line'>
-						<div class='title'>
-							Size
-						</div>
-						<div class='data'>
-							<input type='range' value='3' min='0' max='5' id='sizeInput' oninput="sizeOutput.value = sizeInput.value" />
-							<output id="sizeOutput">3</output>							
-						</div>
-					</div>
-					<div class='line'>
-						<div class='title'>
-							Color
-						</div>
-						<div class='data'>
-							<input type='color' value='#5fec53' />
+						<div class='preview'>
+							<div>
+								Hi, my name is <span class='placeForUserName'>***</span>. 
+								I'm <span class='placeForAge'>***</span> old.
+								I'm a <span class='placeForSex'>***</span>.
+								<div>
+									<img id='previewImg' />
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

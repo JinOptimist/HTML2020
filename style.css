@@ -154,6 +154,8 @@ tr:last-child td{
     display: flex;
     justify-content: center;
     align-items: center;
+	
+	display: none;
 }
 
 .popup .cover{
@@ -248,6 +250,24 @@ tr:last-child td{
 .page-content:target ~ .page-content {
 	display:none;
 }
+
+.formAndPreview{
+	display: flex;
+}
+
+.preview{
+	border: 1px black solid;
+}
+
+#previewImg{
+	max-width: 300px;
+	max-height: 300px;
+}
+
+
+
+
+
 
 
 
