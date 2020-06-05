@@ -126,11 +126,11 @@ td{
 	border: 1px red solid;
 }
 
-tr:nth-child(2n + 3) td{
+tr:nth-child(2n + 2) td{
 	background: #CCC;
 }
 
-tr:nth-child(2n + 4) td{
+tr:nth-child(2n + 3) td{
 	background: #0CC;
 }
 
