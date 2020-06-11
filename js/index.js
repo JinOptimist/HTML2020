@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	
+	
 	init();
 	
 	$(".close").click(function(){
@@ -37,81 +38,7 @@ $(document).ready(function(){
 	}
 	
 	function init(){
-		var namesObjMagic = [];
-		var names = ['Pol', 'Lera', 'Kate'];
-		var totalAge = 0;
 		
-		var rowCount = 10;
-		for(var i = 0; i < rowCount ; i++){
-			var tr = $('<tr>');
-			
-			var tdName  = $('<td>');
-			var name = randElement(names);
-			tdName.text(name);
-			tr.append(tdName);
-			AddOrGrowUp(namesObjMagic, name);
-			
-			var tdAge = tdWithRandNumb(16, 30);
-			tr.append(tdAge);
-			var age = tdAge.text() - 0;
-			totalAge = totalAge + age;
-			
-			var tdHeight = tdWithRandNumb(150, 200);
-			tr.append(tdHeight);
-			
-			var tdWeight = tdWithRandNumb(40, 100);
-			tr.append(tdWeight);
-			
-			var tdIndex  = $('<td>');
-			var weight = tdWeight.text() - 0;
-			var height = (tdHeight.text() - 0) / 100;
-			var index = Math.round(weight / (height * height));
-			tdIndex.text(index);
-			tr.append(tdIndex);
-			
-			
-			$('table').append(tr);	
-		}
-		
-		var totalRow = $("<tr>");
-		
-		namesObjMagic = namesObjMagic.sort(function (a, b){
-			return b.count - a.count;
-		});
-		
-		var tdTotalName = $("<td>");
-		tdTotalName.text(namesObjMagic[0].name);
-		totalRow.append(tdTotalName);
-		
-		
-		var tdTotalAge = $("<td>");
-		tdTotalAge.text(totalAge / rowCount);
-		totalRow.append(tdTotalAge);
-		
-		$('table').append(totalRow);	
-	}
-	
-	function AddOrGrowUp(names, someStr){
-		var magicNameAndCount = names.find(function (item){
-			return item.name == someStr;
-		});
-		
-		if (!magicNameAndCount){
-			magicNameAndCount = {
-				name: someStr,
-				count: 1 
-			};
-			names.push(magicNameAndCount);
-		}else{
-			magicNameAndCount.count++;
-		}
-	}
-	
-	function tdWithRandNumb(min, max){
-		var td  = $('<td>');
-		var randomInt = randomInteger(min, max);
-		td.text(randomInt);
-		return td;
 	}
 	
 	function randomInteger(min, max) {
