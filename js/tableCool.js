@@ -69,6 +69,8 @@ $(document).ready(function(){
 			drawRow(options, row);
 		}
 		
+		drawNiceRow(options, dataRows);
+		
 		//generateTotalRow(namesObjMagic, totalAge, rowCount);
 	}
 	
@@ -108,6 +110,15 @@ $(document).ready(function(){
 			dataRow[columnInfo.name] = value;
 		}
 		return dataRow;
+	}
+	
+	function drawNiceRow(options, dataRow){
+		for(var i = 0; i < dataRow.length; i++){
+			var span = $("<div>");
+			span.addClass('profile');
+			span.text(dataRow[i].Name);
+			$('.nice-view').append(span);
+		}
 	}
 	
 	function drawRow(options, dataRow){

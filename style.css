@@ -9,10 +9,10 @@
 
 .center-block{
 	display: flex;
-	background:green;
+	/* background:green; */
 }
 .left{
-	background: pink;
+	/* background: pink; */
 	width: 150px;
 }
 
@@ -32,7 +32,7 @@
 	min-height: calc(100vh - 200px);
 }
 .adv{
-	background: red;
+	/* background: red; */
 	width: 100px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .left .button{
-	background: red;
+	background: #CCf;
 	border-radius: 10px;
 	padding-left: 10px;
 }
@@ -142,6 +142,7 @@ tr:last-child td{
 
 .footer{
 	font-size: 50px;
+	color: #ddd;
 }
 
 .popup{
@@ -264,12 +265,58 @@ tr:last-child td{
 	max-height: 300px;
 }
 
+.profile{
+	width: 100px;
+	height: 100px;
+}
 
+.chapters{
+	display: flex;
+    flex-wrap: wrap;	
+}
 
+.chapter{
+	width: 200px;
+    height: 250px;
+    border: 1px #ccc solid;
+	display: flex;
+    flex-direction: column;
+	margin: 3px;
+}
 
+.chapter .name{
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px #ccc solid;
+}
 
+.chapter .body{
+	flex: 1;
+}
 
+.chapter .heroes{
+	display: flex;
+	font-style: italic;
+    color: antiquewhite;
+	border-top: 1px #ccc solid;
+}
 
+.chapter .heroes .hero{
+	margin: 0 5px;
+}
+
+.chapter .cover{
+	display: flex;
+	justify-content: center;
+}
+
+.chapter .cover img{
+	max-width: 200px;
+}
+
+.template{
+	display: none;
+}
 
 
 
