@@ -1,0 +1,24 @@
+HTML + CSS
+	1) inline vs block
+	2) custom tag and/or attr
+	3) popup(center, center)
+	4) send data to server
+JS
+	1) типы данных
+	2) замыкания
+	3) "1" + 2 - 10 + 1
+	4) ajax promise
+	5) alert after click to button
+	6) reflection?
+DB
+	1) index
+	2) trigger
+	3) one to many
+	4) remove duplicate from table
+ООП
+	1) SOLID
+	2) abstarct vs interface
+	3) generic type
+	4) Объектная модель для Опросника
+	5) decarate, builder, factory, singeltone, observer
+	6) reflection?

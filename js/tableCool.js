@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var ColumnTypeNumber = 1;
-	var ColumnTypeText = 'Smile';
+	var ColumnTypeText = 69;
 	var ColumnTypeFormula = 3;
 	
 	init();
@@ -52,11 +52,9 @@ $(document).ready(function(){
 	}
 	
 	function generateTable(options){
-		
-		var dataRows = [];
-		
 		drawHeader(options);
 		
+		var dataRows = [];
 		for(var i = 0; i < options.rowCount ; i++){
 			var dataRow = generateDataRow(options);
 			dataRows.push(dataRow);
